@@ -3,20 +3,16 @@ Shields
 Headers
 -->
 
-# Hodgins: Service Example
+# Hodgins: apt-cacher-ng Service
 
-A repository, providing an example service for Hodgins Server.
-
-## Motivation
-
-Other developers should have an idea, where to start and what to provide for a
-proper container service, manageable in Hodgins Server.
+A repository, providing an apt-cacher-ng service for Hodgins Server.
 
 ## Description
 
 This repository provides an ansible-playbook which will:
 
 - pull the image
+- create service folder
 - create a systemd service file
 - start and enable the systemd service
 - open up the firewall
@@ -30,19 +26,23 @@ A hodgins server or compatible deployment must be provided.
 Clone the repository next to you existing Hodgins Server code.
 
 ```
-git clone https://github.com/hodgins-project/service-example.git
+git clone https://github.com/hodgins-project/service_teamspeak.git
 ```
 
 Afterwards, you can install the service.
 
 ```
-ansible-playbook -i <path-to-your-inventory> -k -K -u <hodgins-users> playbooks/example.yml
+ansible-playbook -i <path-to-your-inventory> -k -K -u <hodgins-users> playbooks/service_apt-cacher-ng.yml
 ```
 
 ## Usage
 
-The installation will respond to you with a link, to check your deployed service.
-Most likely, this will be something like "http://<hodgins-ip>:3001".
+The installation will respond to you with a running apt-cacher-ng service.
+Now you can enter the report page:
+
+```
+http://hodgins-ip:3142/acng-report.html
+```
 
 To interact with the container, you will have multiple options.
 
@@ -58,7 +58,7 @@ $ sudo systemctl status podman
 Restart the service (and apply updated images):
 
 ```
-$ sudo systemctl restart example
+$ sudo systemctl restart container_teamspeak
 ```
 
 Services in Hodgins are running in containers. You can interact with the containers
@@ -87,8 +87,8 @@ Thank you so much for considering to contribute! We are happy, when someone is
 joining the hard work. Please feel free to contribute, after having a look at
 the [Conventions](https://github.com/while-true-do/doc-library/).
 
-- [Bugs and Feature Requests](https://github.com/hodgins-project/service-example/issues)
-- [Pull Requests](https://github.com/hodgins-project/service-example/pulls)
+- [Bugs and Feature Requests](https://github.com/hodgins-project/service_teamspeak/issues)
+- [Pull Requests](https://github.com/hodgins-project/service_teamspeak/pulls)
 
 See who has contributed already in the [KUDOS.txt](KUDOS.txt).
 
