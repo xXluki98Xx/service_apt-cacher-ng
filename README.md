@@ -26,7 +26,7 @@ A hodgins server or compatible deployment must be provided.
 Clone the repository next to you existing Hodgins Server code.
 
 ```
-git clone https://github.com/hodgins-project/service_teamspeak.git
+git clone https://github.com/hodgins-project/service_apt-cacher-ng.git
 ```
 
 Afterwards, you can install the service.
@@ -58,7 +58,7 @@ $ sudo systemctl status podman
 Restart the service (and apply updated images):
 
 ```
-$ sudo systemctl restart container_teamspeak
+$ sudo systemctl restart container_apt-cacher-ng
 ```
 
 Services in Hodgins are running in containers. You can interact with the containers
@@ -73,7 +73,7 @@ podman ps
 Restart a running container:
 
 ```
-podman container restart example
+podman container restart apt-cacher-ng
 ```
 
 ## Changelog
