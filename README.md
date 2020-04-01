@@ -26,7 +26,7 @@ A hodgins server or compatible deployment must be provided.
 Clone the repository next to you existing Hodgins Server code.
 
 ```
-git clone https://github.com/hodgins-project/service_apt-cacher-ng.git
+git clone https://github.com/xXluki98Xx/service_apt-cacher-ng.git
 ```
 
 Afterwards, you can install the service.
@@ -73,7 +73,7 @@ podman ps
 Restart a running container:
 
 ```
-podman container restart apt-cacher-ng
+podman container restart service_apt-cacher-ng
 ```
 
 ## Changelog
@@ -87,8 +87,8 @@ Thank you so much for considering to contribute! We are happy, when someone is
 joining the hard work. Please feel free to contribute, after having a look at
 the [Conventions](https://github.com/while-true-do/doc-library/).
 
-- [Bugs and Feature Requests](https://github.com/hodgins-project/service_teamspeak/issues)
-- [Pull Requests](https://github.com/hodgins-project/service_teamspeak/pulls)
+- [Bugs and Feature Requests](https://github.com/xXluki98Xx/service_apt-cacher-ng/issues)
+- [Pull Requests](https://github.com/xXluki98Xx/service_apt-cacher-ng/pulls)
 
 See who has contributed already in the [KUDOS.txt](KUDOS.txt).
 
